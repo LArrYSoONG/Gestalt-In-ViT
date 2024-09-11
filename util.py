@@ -76,7 +76,7 @@ def show_head(image, processor, model, outputs_before_dense, pcas, head_num):
     plt.colorbar(label='Value Intensity')
     plt.show()
 
-    return final_head
+    return reduced_head, final_head
 
 # Take image as input, image normally are artificial images with simply two colors
 # Return mask of size (14 * 14) which indicating different areas--figure, ground and
